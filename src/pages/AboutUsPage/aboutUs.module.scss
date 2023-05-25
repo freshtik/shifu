@@ -1,9 +1,9 @@
-.about-us__common-container {
+.common-container {
     position: relative;
     overflow: hidden;
 }
 
-.about-us__page {
+.page {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -22,12 +22,12 @@
     width: 110%;
 }
 
-.about-us__content {
+.content {
     display: flex;
     justify-content: end;
 }
 
-.about-us__text-content {
+.text-content {
     width: 43%;
     padding: 7vh 3vw;
     padding-right: 10vh;
@@ -44,21 +44,21 @@
 
 
 @media screen and (max-device-width: 960px) {
-    .about-us__text-content {
+    .text-content {
         width: 100%;
         padding: 4vh 3vw;
         background-color: rgba(21, 23, 26, 0.4588235294);
         border-radius: 2px;
     }
 
-    .about-us__content {
+    .content {
         justify-content: center;
     }
 
 }
 
 @media (max-width: 860px) {
-    .about-us__text-content {
+    .text-content {
         width: 90%;
         margin: 1vh 1vw;
         padding: 6vh 5vw;
@@ -66,13 +66,13 @@
         border-radius: 2px;
     }
 
-    .about-us__content {
+    .content {
         justify-content: center;
     }
 }
 
 @media (max-width: 1240px) {
-    .about-us__text-content {
+    .text-content {
         width: 80%;
         margin: 1vh 1vw;
         padding: 3vh 5vw;
@@ -80,7 +80,7 @@
         border-radius: 2px;
     }
 
-    .about-us__content {
+    .content {
         justify-content: center;
     }
 }

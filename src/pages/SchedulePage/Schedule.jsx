@@ -1,6 +1,6 @@
 import React from "react";
 import ElementCell from "../../common/components/ElementCell/ElementCell";
-import "./schedule.styles.scss";
+import styles from "./schedule.module.scss";
 
 
 
@@ -13,13 +13,12 @@ const Schedule = () => {
     ]
 
     const element = (
-        <div className="page schedule__page">
+        <div className={`page ${styles.page}`}>
             <h2 className="page__header">РАСПИСАНИЕ</h2>
-            <div className="schedule__content">
-                <div className="schedule-container">
+            <div className={styles.content}>
+                <div className={styles.container}>
                     {scheduleList.map((el, key) => ElementCell(el.day, el.name, el.time, `schedule_${key}`))}
                 </div>
-
             </div>
         </div>
     )

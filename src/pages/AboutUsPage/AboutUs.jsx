@@ -1,11 +1,11 @@
 import React from "react";
-import "./aboutUs.styles.scss"
+import styles from "./aboutUs.module.scss";
 
 const AboutUs = () => {
 
 
     const onMouseMove = (e) => {
-        let bg = document.querySelector('.about-us__page');
+        let bg = document.querySelector(`.${styles["page"]}`);
 
         if (!bg) {
             return
@@ -18,12 +18,12 @@ const AboutUs = () => {
 
 
     const element = (
-        <div className="page about-us__common-container" onMouseMove={onMouseMove}>
-            <div className="page about-us__page" />
+        <div className={`page ${styles["common-container"]}`} onMouseMove={onMouseMove}>
+            <div className={`page ${styles.page}`} />
             <div>
                 <h2 className="page__header">О НАС</h2>
-                <div className="about-us__content">
-                    <div className="about-us__text-content page__text-content">
+                <div className={styles.content}>
+                    <div className={`${styles["text-content"]} page__text-content`}>
                         <h3>Школа основана Александром Алексеевичем.</h3>
                         <p>Боевые искусства в Китае являеются традицией, которая передается от учителя к ученику. Мастер Чжан Цзюнь Чи говорил, что главное - передача энергии Ци, которая передается от Мастера, в результате чего, в теле ученика формируются правильные механизмы циркуляции энергии. </p>
                         <p>Упражнения - дополнительный способ развития, но без передачи энергии учителем - пустая трата времени и сил.
@@ -31,7 +31,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 
     return element;

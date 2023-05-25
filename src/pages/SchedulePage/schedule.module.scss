@@ -1,10 +1,10 @@
-.schedule__page {
+.page {
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-.schedule__page::before {
+.page::before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -20,14 +20,14 @@
     opacity: 0.6;
 }
 
-.schedule__content {
+.content {
     display: flex;
     justify-content: center;
 }
 
 
 @media screen and (max-device-width: 960px) and (orientation: landscape) {
-    .schedule-container {
+    .container {
         display: flex;
     }
 }

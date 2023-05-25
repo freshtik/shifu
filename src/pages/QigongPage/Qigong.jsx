@@ -1,6 +1,6 @@
 import React from "react";
 import yinYang from '../../common/images/shifu_2.png'
-import "./qigong.styles.scss"
+import styles from "./qigong.module.scss"
 
 
 const Qigong = () => {
@@ -13,17 +13,17 @@ const Qigong = () => {
     ]
 
     const element = (
-        <div className="page qigong__page">
-            <h2 className="page__header">ЦИГУН</h2>
-            <div className="qigong__content">
-                <div className="qigong__text-content page__text-content">
+        <div className={`page ${styles.page}`} >
+            < h2 className="page__header" > ЦИГУН</h2 >
+            <div className={styles.content}>
+                <div className={`${styles.text_content} page__text-content`}>
                     {textContentList.map((el, key) => <p id={key} key={key}>{el}</p>)}
                 </div>
-                <div className='qigong__img'>
+                <div className={styles.image}>
                     <img src={yinYang} alt='Мастер Шифу на фоне Инь-Янь' />
                 </div>
             </div>
-        </div>
+        </div >
     )
 
     return element;

@@ -1,57 +1,57 @@
-.trainer__content {
+.content {
     display: flex;
     justify-content: space-between;
 }
 
-.trainer__text-content {
+.text-content {
     padding-right: 10vh;
     border-radius: 2px;
     width: 40%;
 }
 
-.trainer__photo-card {
+.photo-card {
     width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.trainer__photo-card img {
+.photo-card img {
     width: 25vw;
 }
 
-.trainer__footer {
+.footer {
     width: 100%;
     height: 8vh;
     background-color: #b5a9a5;
     background-image: url(../../common/images/wushuLine.png);
 }
 
-.triner__page {
+.page {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.trainer__text-small {
+.text-small {
     font-weight: 300;
     font-size: 2vh;
 }
 
 @media screen and (max-device-width: 960px) {
-    .trainer__content {
+    .content {
         display: flex;
         flex-direction: column;
     }
 
-    .trainer__photo-card {
+    .photo-card {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .trainer__text-content {
+    .text-content {
         border-radius: 2px;
         width: 90%;
         display: flex;
@@ -60,7 +60,7 @@
         padding: 5vh 5vw;
     }
 
-    .trainer__footer {
+    .footer {
         width: 100%;
         height: 3vh;
         background-size: 1vh;
@@ -69,12 +69,12 @@
 }
 
 @media (max-width: 860px) {
-    .trainer__content {
+    .content {
         display: flex;
         flex-direction: column;
     }
 
-    .trainer__photo-card {
+    .photo-card {
         // width: 100%;
         // display: flex;
         // flex-direction: column;
@@ -82,7 +82,7 @@
         display: none;
     }
 
-    .trainer__text-content {
+    .text-content {
         border-radius: 2px;
         width: 90%;
         display: flex;
@@ -92,13 +92,13 @@
         backdrop-filter: brightness(0.5);
     }
 
-    .trainer__footer {
+    .footer {
         width: 100%;
         height: 3vh;
         background-size: 20vh;
     }
 
-    .triner__page {
+    .page {
         background-image: url(../../common/images/trainer-background.jpg);
         background-size: no-repeat;
         background-position: center;

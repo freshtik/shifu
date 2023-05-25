@@ -1,6 +1,6 @@
 import React from "react";
 import shifu from '../../common/images/shifu.png'
-import "./trainer.styles.scss"
+import styles from "./trainer.module.scss"
 
 const Trainer = () => {
 
@@ -12,22 +12,22 @@ const Trainer = () => {
     ]
 
     const element = (
-        <div className="page triner__page">
+        <div className={`page ${styles.page}`}>
             <div>
                 <h2 className="page__header">ТРЕНЕР</h2>
-                <div className="trainer__content">
-                    <div className='trainer__photo-card'>
+                <div className={styles.content}>
+                    <div className={styles["photo-card"]}>
                         <img src={shifu} alt='Мастер Шифу' />
                         <p>Александр Белобородов</p>
                     </div>
-                    <div className="trainer__text-content page__text-content">
+                    <div className={`${styles["trainer__text-content"]} page__text-content`}>
                         <h3>Мой тренерский путь начался в 1995г</h3>
                         {trainerPathList.map((el, key) => <p key={key}>{el}</p>)}
-                        <p className="trainer__text-small">Вуди Шен гун - Традиция даоских отшельников у Мастера Чи Сунь Цзы.</p>
+                        <p className={styles["text-small"]}>Вуди Шен гун - Традиция даоских отшельников у Мастера Чи Сунь Цзы.</p>
                     </div>
                 </div>
             </div>
-            <div className="trainer__footer">
+            <div className={styles.footer}>
             </div>
         </div>
     )

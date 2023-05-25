@@ -1,40 +1,40 @@
-.contacts_container {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.contacts_map {
+.map {
     margin-bottom: 5vh;
 }
 
-.contacts_text-container {
+.text-container {
     display: flex;
     width: 80vw;
 }
 
-.contacts_text-container:not(:last-child) {
+.text-container:not(:last-child) {
     margin-bottom: 4vh;
 }
 
-.contact_left-side {
+.left-side {
     width: 12vw;
     font-weight: 700;
 }
 
 @media screen and (max-device-width: 960px) {
-    .contact_left-side {
+    .left-side {
         width: 24vw;
         font-weight: 700;
     }
 
-    .contacts_text {
+    .text {
         font-size: 3vh;
         line-height: 4vh;
         margin-bottom: 2vh;
     }
 
-    .contacts_text-container {
+    .text-container {
         flex-direction: column;
     }
 

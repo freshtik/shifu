@@ -1,4 +1,4 @@
-.qigong__img {
+.image {
     height: 100%;
     display: flex;
     align-items: center;
@@ -8,35 +8,35 @@
     height: 100%;
 }
 
-.qigong__img img {
+.image img {
     width: 30vw;
     padding-right: 9vw;
     -webkit-transition: -webkit-transform 2s ease-in-out;
     transition: transform 2s ease-in-out;
 }
 
-.qigong__img img:hover {
+.image img:hover {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 }
 
-.qigong__page {
+.page {
     position: relative;
 }
 
-.qigong__text-content {
+.text_content {
     padding-left: 18vh;
     border-radius: 2px;
     width: 50%;
 }
 
 @media (max-width: 860px) {
-    .qigong__img {
+    .image {
         align-items: start;
         padding-top: 1vh;
     }
 
-    .qigong__text-content {
+    .text_content {
         padding: 20vh 4vw;
         border-radius: 2px;
         width: 90%;
@@ -44,11 +44,11 @@
 }
 
 @media screen and (max-device-width: 960px) {
-    .qigong__img {
+    .image {
         align-items: start;
     }
 
-    .qigong__text-content {
+    .text_content {
         padding: 15vh 4vw;
         border-radius: 2px;
         width: 90%;
@@ -56,14 +56,14 @@
 }
 
 @media (max-width: 1240px) {
-    .qigong__img img {
+    .image img {
         padding-right: 1vw;
         transition: transform 2s ease-in-out;
     }
 }
 
 @media (max-width: 1600px) {
-    .qigong__img img {
+    .image img {
         padding-right: 5vw;
         transition: transform 2s ease-in-out;
     }

@@ -1,6 +1,6 @@
 import React from "react";
 import ElementCell from "../../common/components/ElementCell/ElementCell"
-import "./price.styles.scss";
+import styles from "./price.module.scss";
 
 const Price = () => {
 
@@ -15,25 +15,25 @@ const Price = () => {
     ]
 
     const element = (
-        <div className="page price_page">
-            <div className="price__left-indent" />
+        <div className={`page ${styles.page}`}>
+            <div className={styles.left_indent} />
             <h2 className="page__header">ПРАЙС</h2>
 
-            <div className="price__content">
-                <div className="price_group">
-                    <h3 className="page__text-content price-header">Групповые тренировки</h3>
-                    <div className="price-container">
+            <div className={styles.content}>
+                <div className={styles.group}>
+                    <h3 className={`page__text-content ${styles.header}`}>Групповые тренировки</h3>
+                    <div className={styles.container}>
                         {groupTrainingList.map((el, key) => ElementCell(el.day, el.name, el.time, `price_${key}`))}
                     </div>
                 </div>
-                <div className="price_group">
-                    <h3 className="page__text-content price-header">Индивидуальный тренинг</h3>
-                    <div className="price-container">
+                <div className={styles.group}>
+                    <h3 className={`page__text-content ${styles.header}`}>Индивидуальный тренинг</h3>
+                    <div className={styles.container}>
                         {individualTrainingList.map((el, key) => ElementCell(el.day, el.name, el.time, `price_${key}`))}
                     </div>
                 </div>
             </div>
-            <div className="price__footer">
+            <div className={styles.footer}>
             </div>
         </div>
     )

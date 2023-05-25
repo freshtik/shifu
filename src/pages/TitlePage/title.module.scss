@@ -1,4 +1,4 @@
-.title__page {
+.page {
     display: flex;
     background-image: url(../../common/images/title-background.jpg);
     background-size: no-repeat;
@@ -6,7 +6,7 @@
     background-size: cover;
 }
 
-.title__header {
+.header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -19,19 +19,19 @@
     line-height: 7.5vw;
 }
 
-.title__header b {
+.header b {
     margin-left: 9vw;
     font-size: 4vw;
 }
 
-.title__wrapper {
+.wrapper {
     height: 3vh;
     width: 80%;
     background-color: #3a3839;
 }
 
 @media screen and (max-device-width: 960px) {
-    .title__page {
+    .page {
         display: flex;
         background-image: url(../../common/images/title-background__media.jpg);
         background-size: no-repeat;
@@ -39,29 +39,29 @@
         background-size: cover;
     }
 
-    .title__container {
+    .container {
         display: flex;
         align-items: end;
     }
 
-    .title__header {
+    .header {
         font-size: 15vw;
         font-weight: 700;
         line-height: 14vw;
         text-shadow: #3a3839;
     }
 
-    .title__header b {
+    .header b {
         font-size: 6vw;
     }
 
-    .title__wrapper {
+    .wrapper {
         height: 0;
     }
 }
 
 @media (max-width: 860px) {
-    .title__page {
+    .page {
         display: flex;
         background-image: url(../../common/images/title-background__media.jpg);
         background-size: no-repeat;
@@ -69,16 +69,16 @@
         background-size: cover;
     }
 
-    .title__wrapper {
+    .wrapper {
         height: 0;
     }
 
-    .title__container {
+    .container {
         display: flex;
         align-items: end;
     }
 
-    .title__header {
+    .header {
         font-size: 10vw;
         font-weight: 700;
         line-height: 10vw;
