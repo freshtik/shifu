@@ -1,6 +1,15 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import "./gallery.style.scss";
+import { Navigation, Pagination, Scrollbar, A11y, FreeMode, Thumbs, Controller } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import isPhone from "../../common/scripts/checkIsPhone";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
 const images = [
     "/assets/images/1.jpg",
     "/assets/images/2.jpg",
@@ -15,64 +24,50 @@ const images = [
 ]
 
 const Gallery = () => {
-    const [numImage, setNumImage] = useState(0);
+    const [firstSwiper, setFirstSwiper] = useState(null);
+    const [secondSwiper, setSecondSwiper] = useState(null);
 
-    function getNextIndex(initIndex) {
-        let currentIndex = 0
-        if (numImage === images.length - 1 || numImage >= images.length) {
-            currentIndex = 0;
-        } else {
-            currentIndex = initIndex + 1;
-        }
+    const sliders = images.map((el, key) => {
+        return (
+            <SwiperSlide className="slier-wrapper">
+                <div className="gallery_item" >
+                    <img className="gallery_image" data src={el} key={`img_${key}`} alt={`Супер трени_${key}`} />
+                </div>
+            </SwiperSlide>
+        )
+    })
 
-        return currentIndex;
-    }
+    const sliders2 = images.map((el, key) => {
+        return (
+            <SwiperSlide className="slier-wrapper">
+                <div className="gallery_item" >
+                    <img data src={el} key={`img_${key}`} alt={`Супер трени_${key}`} />
+                </div>
+            </SwiperSlide>
+        )
+    })
 
-    function getPrevIndex(initIndex) {
-        let currentIndex = 0
-        if (numImage === 0 || numImage < 0) {
-            currentIndex = images.length - 1;
-        } else {
-            currentIndex = initIndex - 1;
-        }
-        return currentIndex;
-
-    }
-
-    const onNextButtonClick = (e) => {
-        let nextIndex = getNextIndex(numImage);
-        setNumImage(prev => nextIndex);
-    }
-
-    const onBackButtonClick = (e) => {
-        let prevIndex = getPrevIndex(numImage);
-        setNumImage(prevIndex);
-    }
 
 
     const element = (
-        <>
-            <div className="page gallery_page">
-                <h2 className="page__header">ГАЛЕРЕЯ</h2>
-                <div className="gallery__content">
-                    <div className="gallery__button-container gallery__button-prev">
-                        <button className="gallery__button" onClick={onBackButtonClick}>←
-                            <img className="gallery__image-button" src={images[getPrevIndex(numImage)]} />
-                        </button>
-                    </div>
-                    <div className="gallery__image-container">
-                        <img className="gallery__image" src={images[numImage]}></img>
-                    </div>
-                    <div className="gallery__button-container gallery__button-next">
-                        <button className="gallery__button" onClick={onNextButtonClick}>→
-                            <img className="gallery__image-button" src={images[getNextIndex(numImage)]} />
-                        </button>
-                    </div>
-                </div>
-                <div className="gallery__footer"></div>
-                <div className="gallery_background" />
-            </div >
-        </>
+        <div id="gallery" className="page gallery_page">
+            <h2 className="page__header">ГАЛЕРЕЯ</h2>
+            <Swiper
+                slidesPerView={isPhone() ? 1 : 3}
+                spaceBetween={30}
+                pagination={{
+                    clickable: true,
+                }}
+                // modules={[Pagination]}
+                className="mySwiper"
+                scrollbar={{
+                    hide: true,
+                }}
+                parallax={true}
+            >
+                {sliders}
+            </Swiper>
+        </div >
     )
 
     return element;

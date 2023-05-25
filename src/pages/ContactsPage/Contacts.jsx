@@ -5,7 +5,7 @@ import styles from "./contscts.module.scss";
 
 const Contacts = () => {
     const element = (
-        <div className={`page ${styles.contacts__page}`}>
+        <div id="contacts" className={`page ${styles.contacts__page}`}>
             <h2 className="page__header">КОНТАКТЫ</h2>
             <div className={styles.container}>
                 <div className={styles.map}>

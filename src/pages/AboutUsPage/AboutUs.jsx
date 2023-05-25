@@ -18,7 +18,7 @@ const AboutUs = () => {
 
 
     const element = (
-        <div className={`page ${styles["common-container"]}`} onMouseMove={onMouseMove}>
+        <div id="aboutUs" className={`page ${styles["common-container"]}`} onMouseMove={onMouseMove}>
             <div className={`page ${styles.page}`} />
             <div>
                 <h2 className="page__header">О НАС</h2>

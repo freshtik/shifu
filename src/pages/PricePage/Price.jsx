@@ -15,7 +15,7 @@ const Price = () => {
     ]
 
     const element = (
-        <div className={`page ${styles.page}`}>
+        <div id="price" className={`page ${styles.page}`}>
             <div className={styles.left_indent} />
             <h2 className="page__header">ПРАЙС</h2>
 

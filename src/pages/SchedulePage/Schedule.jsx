@@ -13,7 +13,7 @@ const Schedule = () => {
     ]
 
     const element = (
-        <div className={`page ${styles.page}`}>
+        <div id="schedule" className={`page ${styles.page}`}>
             <h2 className="page__header">РАСПИСАНИЕ</h2>
             <div className={styles.content}>
                 <div className={styles.container}>

@@ -13,7 +13,7 @@ const Qigong = () => {
     ]
 
     const element = (
-        <div className={`page ${styles.page}`} >
+        <div id="qigong" className={`page ${styles.page}`} >
             < h2 className="page__header" > ЦИГУН</h2 >
             <div className={styles.content}>
                 <div className={`${styles.text_content} page__text-content`}>

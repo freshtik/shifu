@@ -12,7 +12,7 @@ const Trainer = () => {
     ]
 
     const element = (
-        <div className={`page ${styles.page}`}>
+        <div className={`page ${styles.page}`} id="trainer" >
             <div>
                 <h2 className="page__header">ТРЕНЕР</h2>
                 <div className={styles.content}>

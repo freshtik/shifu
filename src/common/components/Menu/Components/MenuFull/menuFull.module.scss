@@ -1,0 +1,35 @@
+.container {
+    position: sticky;
+    display: flex;
+    justify-content: end;
+    padding: 0vh 2vw;
+    bottom: 0;
+    height: 100vh;
+    z-index: 100;
+}
+
+.inner-container {
+    height: 100vh;
+    color: #f1e3db;
+    background-color: #3a3839;
+    padding: 1.5vh 1.3vw;
+    font-size: 2.2vh;
+    list-style-type: none;
+    font-weight: 600;
+    letter-spacing: 0.23vw;
+    border-radius: 2px;
+}
+
+.left-container {
+    display: flex;
+    margin-right: 4vw;
+}
+
+.right-container {
+    display: flex;
+    margin-right: 4vw;
+}
+
+.container li:not(:last-child) {
+    margin-right: 2vw;
+}
