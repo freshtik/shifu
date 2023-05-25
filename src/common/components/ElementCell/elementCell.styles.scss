@@ -1,0 +1,113 @@
+.element-cell__item {
+    width: 160px;
+    height: 100px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 2px;
+    margin: 20px;
+    color: #000000;
+    transition: all 1s ease;
+}
+
+.element-cell__item:hover {
+    width: 110px;
+    height: 90px;
+    background-color: #15171a75;
+    color: #ffffff;
+    transition: all 1s ease;
+    margin: 25px 45px;
+    border-radius: 2px;
+}
+
+.element-cell__day {
+    padding-bottom: 7px;
+    font-weight: 800;
+    border-bottom: solid 1px;
+    margin-bottom: 24px;
+}
+
+.element-cell__name {
+    padding-bottom: 10px;
+    font-weight: 600;
+
+}
+
+.element-cell__time {
+    font-weight: 600;
+}
+
+.element-cell__price_item {
+    width: 12vw;
+    height: 100px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 2px;
+    margin: 20px 2vw;
+    color: #000000;
+    transition: all 1s ease;
+}
+
+.element-cell__price_item:hover {
+    width: 11vw;
+    height: 90px;
+    background-color: #15171a75;
+    color: #ffffff;
+    transition: all 1s ease;
+    margin: 25px 2.5vw;
+    border-radius: 2px;
+}
+
+.element-cell__price_name {
+    padding-bottom: 7px;
+    font-weight: 800;
+    border-bottom: solid 1px;
+    margin-bottom: 24px;
+    font-size: 2.1vh;
+}
+
+.element-cell__price {
+    font-size: 2.4vh;
+    font-weight: 700;
+}
+
+@media (max-width: 1240px) {
+    .element-cell__price_item {
+        width: 20vw;
+    }
+
+    .element-cell__price_item:hover {
+        width: 19vw;
+        height: 90px;
+        background-color: #15171a75;
+        color: #ffffff;
+        transition: all 1s ease;
+        margin: 25px 2.5vw;
+        border-radius: 2px;
+    }
+}
+
+@media screen and (max-device-width: 960px) {
+    .element-cell__time {
+        font-size: 1.7vh;
+    }
+}
+
+@media (max-width: 860px) {
+    .element-cell__time {
+        font-size: 1.7vh;
+    }
+
+    .element-cell__price_item {
+        width: 45vw;
+    }
+
+    .element-cell__price_item:hover {
+        width: 44vw;
+        height: 90px;
+        background-color: #15171a75;
+        color: #ffffff;
+        transition: all 1s ease;
+        margin: 25px 2.5vw;
+        border-radius: 2px;
+    }
+}

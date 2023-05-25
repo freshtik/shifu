@@ -1,0 +1,33 @@
+.schedule__page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.schedule__page::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(../../common/images/schedule__background.jpg);
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    opacity: 0.6;
+}
+
+.schedule__content {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-device-width: 960px) and (orientation: landscape) {
+    .schedule-container {
+        display: flex;
+    }
+}

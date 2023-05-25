@@ -1,0 +1,48 @@
+.contacts_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts_map {
+    margin-bottom: 5vh;
+}
+
+.contacts_text-container {
+    display: flex;
+    width: 80vw;
+}
+
+.contacts_text-container:not(:last-child) {
+    margin-bottom: 4vh;
+}
+
+.contact_left-side {
+    width: 12vw;
+    font-weight: 700;
+}
+
+@media screen and (max-device-width: 960px) {
+    .contact_left-side {
+        width: 24vw;
+        font-weight: 700;
+    }
+
+    .contacts_text {
+        font-size: 3vh;
+        line-height: 4vh;
+        margin-bottom: 2vh;
+    }
+
+    .contacts_text-container {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 860px) {
+    .contact_left-side {
+        width: 24vw;
+        font-weight: 700;
+    }
+}

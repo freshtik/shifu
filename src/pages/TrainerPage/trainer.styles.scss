@@ -1,0 +1,108 @@
+.trainer__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trainer__text-content {
+    padding-right: 10vh;
+    border-radius: 2px;
+    width: 40%;
+}
+
+.trainer__photo-card {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trainer__photo-card img {
+    width: 25vw;
+}
+
+.trainer__footer {
+    width: 100%;
+    height: 8vh;
+    background-color: #b5a9a5;
+    background-image: url(../../common/images/wushuLine.png);
+}
+
+.triner__page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trainer__text-small {
+    font-weight: 300;
+    font-size: 2vh;
+}
+
+@media screen and (max-device-width: 960px) {
+    .trainer__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trainer__photo-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trainer__text-content {
+        border-radius: 2px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 5vh 5vw;
+    }
+
+    .trainer__footer {
+        width: 100%;
+        height: 3vh;
+        background-size: 1vh;
+        background-image: none;
+    }
+}
+
+@media (max-width: 860px) {
+    .trainer__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trainer__photo-card {
+        // width: 100%;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        display: none;
+    }
+
+    .trainer__text-content {
+        border-radius: 2px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 5vh 5vw;
+        backdrop-filter: brightness(0.5);
+    }
+
+    .trainer__footer {
+        width: 100%;
+        height: 3vh;
+        background-size: 20vh;
+    }
+
+    .triner__page {
+        background-image: url(../../common/images/trainer-background.jpg);
+        background-size: no-repeat;
+        background-position: center;
+        background-size: cover;
+        backdrop-filter: brightness(0.6);
+    }
+}

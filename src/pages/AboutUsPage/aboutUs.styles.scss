@@ -1,0 +1,86 @@
+.about-us__common-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-us__page {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(../../common/images/about-us__background.jpg);
+    background-size: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    opacity: 0.6;
+    width: 110%;
+}
+
+.about-us__content {
+    display: flex;
+    justify-content: end;
+}
+
+.about-us__text-content {
+    width: 43%;
+    padding: 7vh 3vw;
+    padding-right: 10vh;
+    background-color: #15171a75;
+    border-radius: 2px;
+}
+
+.page__text-content p {
+    padding-bottom: 2vh;
+    line-height: 4.5vh;
+    text-align: justify;
+}
+
+
+
+@media screen and (max-device-width: 960px) {
+    .about-us__text-content {
+        width: 100%;
+        padding: 4vh 3vw;
+        background-color: rgba(21, 23, 26, 0.4588235294);
+        border-radius: 2px;
+    }
+
+    .about-us__content {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 860px) {
+    .about-us__text-content {
+        width: 90%;
+        margin: 1vh 1vw;
+        padding: 6vh 5vw;
+        background-color: rgba(21, 23, 26, 0.4588235294);
+        border-radius: 2px;
+    }
+
+    .about-us__content {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1240px) {
+    .about-us__text-content {
+        width: 80%;
+        margin: 1vh 1vw;
+        padding: 3vh 5vw;
+        background-color: rgba(21, 23, 26, 0.4588235294);
+        border-radius: 2px;
+    }
+
+    .about-us__content {
+        justify-content: center;
+    }
+}

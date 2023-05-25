@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+@font-face {
+  font-family: 'Caviar Dreams';
+  src: url('../../public/fonts/caviar_dreams.eot');
+  /* IE 9 Compatibility Mode */
+  src: url('../../public/fonts/caviar_dreams.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */
+    url('../../public/fonts/caviar_dreams.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../../public/fonts/caviar_dreams.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */
+    url('../../public/fonts/caviar_dreams.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../../public/fonts/caviar_dreams.svg#caviar_dreams') format('svg');
+  /* Chrome < 4, Legacy iOS */
+}
+
+body {
+  background-color: #40464C;
+  font-family: 'Caviar Dreams', 'Roboto Mono', system-ui, 'Roboto', 'Gill Sans', 'Courier New', Courier, monospace;
+  color: rgb(255, 255, 255);
+}
+
+body p {
+  font-size: 2.4vh;
+}
+
+.page {
+  width: 99vw;
+  height: 100vh;
+}
+
+.page__header {
+  padding: 8vh 7vh;
+  font-size: 8vh;
+}
+
+.page__text-content h3 {
+  padding-bottom: 2.5vh;
+  font-size: 3.2vh;
+}
+
+@media screen and (max-device-width: 960px) {
+  .page {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .page__header {
+    padding: 4vh;
+    font-size: 7vh;
+  }
+
+  .page__text-content {
+    line-height: normal;
+  }
+
+  body p {
+    font-size: 2vw;
+    line-height: 2vw;
+  }
+}
+
+@media (max-width: 860px) {
+  .page__header {
+    padding: 3vh;
+    font-size: 6vh;
+  }
+
+  .page__text-content p {
+    line-height: 1.8vh;
+    font-size: 1.8vh;
+  }
+
+  .page__text-content h3 {
+    padding-bottom: 1vh;
+    font-size: 2.3vh;
+  }
+
+}
