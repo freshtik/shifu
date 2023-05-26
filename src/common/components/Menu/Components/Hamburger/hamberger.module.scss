@@ -2,6 +2,7 @@
     position: sticky;
     top: 0;
     height: 0;
+    z-index: 100;
 }
 
 .menu-container {
@@ -9,7 +10,6 @@
     justify-content: end;
     padding: 0vh 2vw;
     height: 0vh;
-    z-index: 100;
 
     color: #f1e3db;
     background-color: #3a3839;
@@ -19,7 +19,6 @@
     display: flex;
     flex-direction: column;
     padding: 0vh 2vw;
-    z-index: 100;
     color: #f1e3db;
     background-color: #3a3839;
     height: auto;
@@ -29,29 +28,31 @@
     overflow: hidden;
 }
 
-.btn-open {
+.btn {
     color: #f1e3db;
     background-color: #3a3839;
-    margin: 3vh 2vw;
     height: 5vh;
     width: 5vh;
-    font-size: 2vh;
     padding: 0 1.6vw;
     border-radius: 2px;
-    z-index: 1000 !important;
+    font-size: 2vh;
+}
+
+.btn-open {
+    margin: 3vh 2vw;
 }
 
 .btn-close {
-    color: #f1e3db;
-    background-color: #3a3839;
-    width: 5vh;
-    height: 5vh;
-    font-size: 2vh;
-    padding: 0 1.6vw;
-    border-radius: 2px;
     margin: 4vh 0;
 }
 
 .container li {
     margin-bottom: 3vh;
+}
+
+@media only screen and (orientation: landscape) and (min-device-width: 320px) and (max-device-height: 960px) {
+    .btn {
+        height: 5vw;
+        width: 5vw;
+    }
 }

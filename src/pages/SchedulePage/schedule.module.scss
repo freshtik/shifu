@@ -31,3 +31,13 @@
         display: flex;
     }
 }
+
+@media (orientation: landscape) {
+    .page {
+        height: 100vh !important;
+    }
+
+    .container {
+        display: flex;
+    }
+}

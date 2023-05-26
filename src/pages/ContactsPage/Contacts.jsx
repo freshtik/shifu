@@ -1,11 +1,11 @@
 import React from "react";
 import MapY from "../../common/components/Map/MapY";
 
-import styles from "./contscts.module.scss";
+import styles from "./contacts.module.scss";
 
 const Contacts = () => {
     const element = (
-        <div id="contacts" className={`page ${styles.contacts__page}`}>
+        <div id="contacts" className={styles.page}>
             <h2 className="page__header">КОНТАКТЫ</h2>
             <div className={styles.container}>
                 <div className={styles.map}>

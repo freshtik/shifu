@@ -24,9 +24,6 @@ const images = [
 ]
 
 const Gallery = () => {
-    const [firstSwiper, setFirstSwiper] = useState(null);
-    const [secondSwiper, setSecondSwiper] = useState(null);
-
     const sliders = images.map((el, key) => {
         return (
             <SwiperSlide className="slier-wrapper">
@@ -37,20 +34,8 @@ const Gallery = () => {
         )
     })
 
-    const sliders2 = images.map((el, key) => {
-        return (
-            <SwiperSlide className="slier-wrapper">
-                <div className="gallery_item" >
-                    <img data src={el} key={`img_${key}`} alt={`Супер трени_${key}`} />
-                </div>
-            </SwiperSlide>
-        )
-    })
-
-
-
     const element = (
-        <div id="gallery" className="page gallery_page">
+        <div id="gallery" className="gallery_page">
             <h2 className="page__header">ГАЛЕРЕЯ</h2>
             <Swiper
                 slidesPerView={isPhone() ? 1 : 3}
@@ -58,12 +43,12 @@ const Gallery = () => {
                 pagination={{
                     clickable: true,
                 }}
-                // modules={[Pagination]}
                 className="mySwiper"
                 scrollbar={{
                     hide: true,
                 }}
                 parallax={true}
+                loop={true}
             >
                 {sliders}
             </Swiper>

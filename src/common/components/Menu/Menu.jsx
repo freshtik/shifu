@@ -10,9 +10,12 @@ import isPhone from "../../scripts/checkIsPhone";
 
 const Menu = () => {
 
+    const tt = true
+
     console.log(isPhone());
     return (
         isPhone()
+            // tt
             ? < Hamburger />
             : <MenuFull />
     )

@@ -4,6 +4,10 @@
   user-select: none;
 }
 
+:root {
+  --fSize: calc(1vh*1vw);
+}
+
 @font-face {
   font-family: 'Caviar Dreams';
   src: url('../../public/fonts/caviar_dreams.eot');
@@ -24,15 +28,18 @@ body {
   background-color: #40464C;
   font-family: 'Caviar Dreams', 'Roboto Mono', system-ui, 'Roboto', 'Gill Sans', 'Courier New', Courier, monospace;
   color: rgb(255, 255, 255);
+  position: relative;
 }
 
 body p {
   font-size: 2.4vh;
+  line-height: 3.6vh;
 }
 
 .page {
   width: 99vw;
   height: 100vh;
+  min-height: 600px;
 }
 
 .page__header {
@@ -43,6 +50,10 @@ body p {
 .page__text-content h3 {
   padding-bottom: 2.5vh;
   font-size: 3.2vh;
+}
+
+.page__text-content p:not(:last-child) {
+  margin-bottom: 1.5vh;
 }
 
 @media screen and (max-device-width: 960px) {
@@ -73,13 +84,39 @@ body p {
   }
 
   .page__text-content p {
-    line-height: 1.8vh;
-    font-size: 1.8vh;
+    line-height: 3vh;
+    font-size: 2.3vh;
+  }
+
+  .page__text-content p:not(:last-child) {
+    margin-bottom: 1.3vh;
   }
 
   .page__text-content h3 {
-    padding-bottom: 1vh;
-    font-size: 2.3vh;
+    padding-bottom: 2vh;
+    font-size: 2.5vh;
+  }
+
+}
+
+@media only screen and (orientation: landscape) and (min-device-width: 320px) and (max-device-height: 960px) {
+  .page__header {
+    padding: 3vh;
+    font-size: calc(6vh*1vw);
+  }
+
+  .page__text-content p {
+    line-height: 4vw;
+    font-size: 2.3vw;
+  }
+
+  .page__text-content p:not(:last-child) {
+    margin-bottom: 1.3vw;
+  }
+
+  .page__text-content h3 {
+    padding-bottom: 2vw;
+    font-size: 2.5vw;
   }
 
 }

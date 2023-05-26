@@ -14,7 +14,7 @@ const Hamburger = () => {
                 (!open)
                     ? (
                         <div className={styles["menu-container"]}>
-                            <button style={{ zIndex: 99999 }} className={styles["btn-open"]} onClick={() => setOpen(true)}>M</button>
+                            <button className={`${styles["btn-open"]} ${styles["btn"]}`} onClick={() => setOpen(true)}>M</button>
                         </div>
                     )
                     : null
@@ -22,7 +22,7 @@ const Hamburger = () => {
             {
                 (open)
                     ? <div className={styles.container}>
-                        <button className={styles["btn-close"]} onClick={() => setOpen(false)}> X </button>
+                        <button className={`${styles["btn-close"]} ${styles["btn"]}`} onClick={() => setOpen(false)}> X </button>
                         <div className={styles["inner-container"]}>
                             <li><Link to="aboutUs">О НАС</Link></li>
                             <li><Link to="qigong">ЦИГУН</Link></li>

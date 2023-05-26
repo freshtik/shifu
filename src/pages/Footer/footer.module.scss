@@ -5,3 +5,9 @@
 .text-container {
     padding: 2vh 2vw;
 }
+
+@media (max-width: 860px) {
+    .text-container {
+        padding-left: 6vw;
+    }
+}

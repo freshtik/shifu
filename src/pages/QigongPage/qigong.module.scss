@@ -68,3 +68,14 @@
         transition: transform 2s ease-in-out;
     }
 }
+
+@media only screen and (orientation: landscape) and (min-device-width: 320px) and (max-device-height: 960px) {
+
+    .text_content {
+        width: 60%;
+    }
+
+    .image {
+        top: 4vw
+    }
+}

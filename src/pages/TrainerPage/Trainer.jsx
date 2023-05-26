@@ -13,14 +13,14 @@ const Trainer = () => {
 
     const element = (
         <div className={`page ${styles.page}`} id="trainer" >
-            <div>
+            <div className={styles.container}>
                 <h2 className="page__header">ТРЕНЕР</h2>
                 <div className={styles.content}>
                     <div className={styles["photo-card"]}>
                         <img src={shifu} alt='Мастер Шифу' />
                         <p>Александр Белобородов</p>
                     </div>
-                    <div className={`${styles["trainer__text-content"]} page__text-content`}>
+                    <div className={`${styles["text-content"]} page__text-content`}>
                         <h3>Мой тренерский путь начался в 1995г</h3>
                         {trainerPathList.map((el, key) => <p key={key}>{el}</p>)}
                         <p className={styles["text-small"]}>Вуди Шен гун - Традиция даоских отшельников у Мастера Чи Сунь Цзы.</p>
